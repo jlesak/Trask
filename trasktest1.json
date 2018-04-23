@@ -1,0 +1,67 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "id": "https://traskweb.azurewebsites.net/trasktest1.json",
+    "type": "object",
+    "title": "Trask Test 1 Schema",
+    "additionalProperties": true,
+    "allOf": [
+        {
+            "$ref": "#/definitions/TraskTest1"
+        }
+    ],
+    "properties": {
+        "version": {
+            "type": "string",
+            "description": "Schema version that this trask test 1 requires."
+        }
+    },
+    "required": [
+        "version"
+    ],
+    "definitions": {
+        "TraskTest1": {
+            "additionalProperties": true,
+            "type": "object",
+            "description": "Schema for a trask test 1",
+            "properties": {
+                "email": {
+                    "type": "string",
+                    "title": "Email address",
+                    "description": "Your email adress"
+                },
+                "firstName": {
+                    "type": "string",
+                    "title": "First name",
+                    "description": "Your first name"
+                },
+                "lastName": {
+                    "type": "string",
+                    "title": "Last name",
+                    "description": "Your last name"
+                },
+                "company": {
+                    "type":"string",
+                    "title": "Company",
+                    "description": "Which company are you from?"
+                },
+                "position": {
+                    "type":"string",
+                    "title": "Work position",
+                    "description": "What position do you work?"
+                },
+                "source": {
+                    "type":"string",
+                    "title": "Source",
+                    "description": "Where did you hear about us?"
+                }
+            },
+            "required": [
+                "email",
+                "firstName",
+                "lastName",
+                "company",
+                "source"
+            ]
+        }
+    }
+}

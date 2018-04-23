@@ -1,0 +1,10 @@
+{
+    "$schema": "https://traskweb.azurewebsites.net/trasktest1.json",
+    "version": "0.1",
+    "id": "1",
+    "email": "user@example.com",
+    "firstName": "FirstJohn",
+    "lastName": "LastJohn",
+    "company": "Universe",
+    "source": "Forbes"
+}
